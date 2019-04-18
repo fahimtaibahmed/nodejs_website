@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/static/index.css"/>
+    <title>Diabetes Predictator</title>
+</head>
+<body>
+    <h2>Diabetes Prediction</h2>
+<p>Please enter your details for an AI probabilistic prediction of the chancecs of you getting diabetes</p>
+
+
+
+<div class="container">
+  <form action="/action_page.php">
+  <div class="row">
+    <div class="col-25">
+      <label for="pregnancy">#Pregnancies</label>
+    </div>
+    <div class="col-75">
+      <input type="number" min="0" id="pregnancy" name="pregnancy" placeholder="How many pregnancies have you had..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="glucose">Glucose</label>
+    </div>
+    <div class="col-75">
+      <input type="number" min="0" id="glucose" name="glucose" placeholder="Your glucose level...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="bloodpressure">Blood Pressure</label>
+    </div>
+    <div class="col-75">
+      <input type="number" min="0" id="bloodpressure" name="bloodpressure" placeholder="Blood pressure...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="Skin">Skin Thickness</label>
+    </div>
+    <div class="col-75">
+      <input type="number" min="0" id="skin" name="skin" placeholder="Please enter your skin thickness...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="insulin">Insulin</label>
+    </div>
+    <div class="col-75">
+      <input type="number" min="0" id="insulin" name="insulin" placeholder="Please enter insulin level...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="bmi">BMI</label>
+    </div>
+    <div class="col-75">
+      <input type="number" step="0.1" min="0" id="bmi" name="bmi" placeholder="Your BMI..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="dpf">DiabetesPedigreeFunction</label>
+    </div>
+    <div class="col-75">
+      <input type="number" step="0.001" min="0" id="dpf" name="dpf" placeholder="Family diabetes risk factor...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="age">Age</label>
+    </div>
+    <div class="col-75">
+      <input type="number" id="age" min="0" name="age" placeholder="Your age please...">
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Predict">
+  </div>
+  </form>
+</div>
+
+
+</body>
+</html>
